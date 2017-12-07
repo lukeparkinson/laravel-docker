@@ -16,7 +16,7 @@
 
 3) Edit your hosts file and add `127.0.0.1 application.local`
 
-4) Open your browser and go to `http://application.local`
+4) Open your browser and go to `http://application.local:8080`
 
 
 ###### Contact Me
