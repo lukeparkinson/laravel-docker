@@ -7,8 +7,22 @@ web:
         - ./site.conf:/etc/nginx/conf.d/site.conf
     links:
         - php
+        - db
 
 php:
-    image: php:7-fpm
+    build: ./php
     volumes:
         - ./../:/code
+    links:
+        - db
+
+db:
+    image: mysql
+    ports:
+        - "3366:3306"
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: application
+        MYSQL_USER: application
+        MYSQL_PASSWORD: password
