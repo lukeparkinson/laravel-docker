@@ -22,13 +22,25 @@
    DB_PASSWORD=password
 ```
 
-3) In this directory run `docker-compose up` and wait for the containers to be built and running
+3) Use these mail settings in your `.env` file
 
-4) To run migrations, run `sudo docker exec -i -t PHP_CONTAINER_ID /bin/bash` to connect to the PHP container, then run `cd /code && php ./artisan migrate`
+```MAIL_DRIVER=smtp
+   MAIL_HOST=mailhog
+   MAIL_PORT=1025
+   MAIL_USERNAME=null
+   MAIL_PASSWORD=null
+   MAIL_ENCRYPTION=null
+```
 
-5) Edit your hosts file and add `127.0.0.1 application.local`
+4) In this directory run `docker-compose up` and wait for the containers to be built and running
 
-6) Open your browser and go to `http://application.local:8080`
+5) To run migrations, run `sudo docker exec -i -t PHP_CONTAINER_ID /bin/bash` to connect to the PHP container, then run `cd /code && php ./artisan migrate`
+
+6) Edit your hosts file and add `127.0.0.1 application.local`
+
+7) Open your browser and go to `http://application.local:8080`
+
+8) Emails will be caught and can be viewed by going to `http://application.local:8025/`
 
 
 ###### Contact Me
