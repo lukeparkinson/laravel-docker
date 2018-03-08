@@ -15,6 +15,7 @@ php:
         - ./../:/code
     links:
         - db
+        - mailhog
 
 db:
     image: mysql
@@ -26,3 +27,9 @@ db:
         MYSQL_DATABASE: application
         MYSQL_USER: application
         MYSQL_PASSWORD: password
+
+mailhog:
+    image: mailhog/mailhog
+    ports:
+        - "1025:1025"
+        - "8025:8025"
