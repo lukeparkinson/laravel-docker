@@ -1,5 +1,5 @@
 web:
-    image: nginx:latest
+    image: nginx:1.13.9
     ports:
         - "8080:80"
     volumes:
@@ -15,10 +15,11 @@ php:
         - ./../:/code
     links:
         - db
+        - redis
         - mailhog
 
 db:
-    image: mysql
+    image: mysql:5.7.21
     ports:
         - "3366:3306"
     restart: always
@@ -33,3 +34,8 @@ mailhog:
     ports:
         - "1025:1025"
         - "8025:8025"
+
+redis:
+    image: redis:3.2.11
+    ports:
+        - "6379:6379"
