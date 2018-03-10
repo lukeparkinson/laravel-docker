@@ -50,15 +50,21 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
 
-5) In this directory run `docker-compose up` and wait for the containers to be built and running
+5) The PHP container uses the redis extension, you need to tell Laravel to use this by editing `/config/database.php` and editing this line under `Redis Databases` section
 
-6) To run migrations, run `sudo docker exec -i -t PHP_CONTAINER_ID /bin/bash` to connect to the PHP container, then run `cd /code && php ./artisan migrate`
+```
+'client' => 'phpredis',
+```
 
-7) Edit your hosts file and add `127.0.0.1 application.local`
+6) In this directory run `docker-compose up` and wait for the containers to be built and running
 
-8) Open your browser and go to `http://application.local:8080`
+7) To run migrations, run `sudo docker exec -i -t PHP_CONTAINER_ID /bin/bash` to connect to the PHP container, then run `cd /code && php ./artisan migrate`
 
-9) Emails will be caught and can be viewed by going to `http://application.local:8025/`
+8) Edit your hosts file and add `127.0.0.1 application.local`
+
+9) Open your browser and go to `http://application.local:8080`
+
+10) Emails will be caught and can be viewed by going to `http://application.local:8025/`
 
 
 ###### Contact Me
