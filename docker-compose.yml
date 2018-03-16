@@ -47,6 +47,14 @@ services:
       - "6379:6379"
     networks:
       - appnet
+  cloud9:
+    image: kdelfour/cloud9-docker
+    volumes:
+      - ./../:/workspace/
+    ports:
+      - "8081:80"
+    networks:
+      - appnet
 networks:
   appnet:
     driver: "bridge"
