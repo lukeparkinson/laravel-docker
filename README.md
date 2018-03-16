@@ -66,6 +66,8 @@ REDIS_PORT=6379
 
 10) Emails will be caught and can be viewed by going to `http://application.local:8025/`
 
+11) You can use the Cloud9 web IDE, by visiting `http://application.local:8081`
+
 
 ###### Contact Me
 
