@@ -64,9 +64,23 @@ REDIS_PORT=6379
 
 9) Open your browser and go to `http://application.local:8080`
 
-10) Emails will be caught and can be viewed by going to `http://application.local:8025/`
+Notes:
 
-11) You can use the Cloud9 web IDE, by visiting `http://application.local:8081`
+* Emails will be caught and can be viewed by going to the mailhog URL below
+
+
+#### Containers
+
+Use the URLs below to access the containers:
+
+| Container | URL |
+| ------ | ------ |
+| Nginx - Application | http://application.local:8080 |
+| MySQL | http://application.local:3366 |
+| Redis | http://application.local:6379 |
+| Mailhog (web interface) | http://application.local:8025 |
+| Cloud9 IDE | http://application.local:8081 |
+
 
 
 ###### Contact Me
