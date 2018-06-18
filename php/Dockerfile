@@ -7,7 +7,7 @@ RUN pecl install -o -f redis \
 &&  docker-php-ext-enable redis
 
 RUN apt-get update && apt-get install -y \
-        gcc make autoconf libc-dev pkg-config libmcrypt-dev
+        git gcc make autoconf libc-dev pkg-config libmcrypt-dev
 
 RUN pecl install -o -f mcrypt-1.0.1
 
