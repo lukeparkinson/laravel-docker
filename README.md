@@ -58,7 +58,7 @@ REDIS_PORT=6379
 
 6) In this directory run `docker-compose up` and wait for the containers to be built and running
 
-7) To run migrations, run `sudo docker exec -it PHP_CONTAINER_ID bash` to connect to the PHP container, then run `cd /code && php ./artisan migrate`
+7) To run migrations, run `sudo docker exec -it app_php bash` to connect to the PHP container, then run `cd /code && php ./artisan migrate:fresh`
 
 8) Edit your hosts file and add `127.0.0.1 application.local`
 
