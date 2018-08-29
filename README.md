@@ -62,9 +62,7 @@ REDIS_PORT=6379
 
 Remove the `--seed` if you don't wish to seed as well as run the migrations
 
-8) Edit your hosts file and add `127.0.0.1 application.local`
-
-9) Open your browser and go to `http://application.local:8080`
+8) Open your browser and go to `http://127.0.0.1:8080`
 
 Notes:
 
@@ -77,11 +75,11 @@ Use the URLs below to access the containers:
 
 | Container | URL |
 | ------ | ------ |
-| Nginx - Application | http://application.local:8080 |
-| MySQL | http://application.local:3366 |
-| Redis | http://application.local:6379 |
-| Mailhog (web interface) | http://application.local:8025 |
-| Cloud9 IDE | http://application.local:8081 |
+| Nginx - Application | http://127.0.0.1:8080 |
+| MySQL | http://127.0.0.1:3366 |
+| Redis | http://127.0.0.1:6379 |
+| Mailhog (web interface) | http://127.0.0.1:8025 |
+| Cloud9 IDE | http://127.0.0.1:8081 |
 
 
 
