@@ -12,6 +12,8 @@
 
 1) Checkout this repository into your Laravel application, into a directory called `.docker` within the root
 
+`git clone https://github.com/lukeparkinson/laravel-docker.git .docker`
+
 2) Use these database settings in your `.env` file
 
 ```
