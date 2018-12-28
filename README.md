@@ -82,10 +82,13 @@ Use the URLs below to access the containers:
 | Redis | http://127.0.0.1:6379 |
 | Mailhog (web interface) | http://127.0.0.1:8025 |
 | Cloud9 IDE | http://127.0.0.1:8081 |
+| PhpMyAdmin | http://127.0.0.1:8082 |
 
+
+##### Please note: this setup is for dev use only
 
 
 ###### Contact Me
 
- * [Website](https://lparkinson.com/)
- * [Email](mailto:mail@lparkinson.com)
+ * [Website](https://lukeparkinson.co.uk/)
+ * [Email](mailto:mail@lukeparkinson.co.uk)
